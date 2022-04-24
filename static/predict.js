@@ -61,8 +61,9 @@ let model;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('http://192.168.18.1:81/tfjs-models/model/model.json');
+  model = await tf.loadModel('http://localhost:81/tfjs-models/model/model.json');
 }
+
 
 canvas.addEventListener('mousedown', event => {
   isDrawing = true;
@@ -125,7 +126,7 @@ function updateDisplay() {
   
   // Find index of best prediction, which corresponds to the predicted value
   predictions = predict()
-  console.log(predictions);
+  // console.log(predictions);
   const bestPred = predictions.indexOf(Math.max(...predictions));
   displayBox.innerText = bestPred;
 }
@@ -163,6 +164,40 @@ function drawRotated(){
     smBox.drawImage(image,-smallCanvas.width/2,-smallCanvas.height/2);
     smBox.restore();
 }
+
+  // inputBox.strokeStyle = 'white';
+  // inputBox.lineWidth = '15';
+  // inputBox.lineJoin = inputBox.lineCap = 'round';
+  // inputBox.beginPath();
+	var start = function(e) {
+    isDrawing = true;
+
+
+    inputBox.strokeStyle = 'white';
+    inputBox.lineWidth = '15';
+    inputBox.lineJoin = inputBox.lineCap = 'round';
+		inputBox.beginPath();
+		// x = e.changedTouches[0].pageX;
+		// y = e.changedTouches[0].pageY-44;
+    // console.log(x,y);
+		// inputBox.moveTo(x,y);
+	};
+	var move = function(e) {
+		e.preventDefault();
+		x = e.changedTouches[0].pageX;
+		y = e.changedTouches[0].pageY-44;
+    // console.log(e.changedTouches[0].pageX, e.changedTouches[0].pageY);
+    if (isDrawing) drawStroke(e.changedTouches[0].pageX, e.changedTouches[0].pageY);
+		// inputBox.lineTo(x,y);
+		// inputBox.stroke();
+	};
+
+  var end = function(e) {
+    isDrawing = false;
+  };
+  document.getElementById("main-canvas").addEventListener("touchstart", start, false);
+	document.getElementById("main-canvas").addEventListener("touchmove", move, false);
+  document.getElementById("main-canvas").addEventListener("touchend", end, false);
 
 erase();
 init();

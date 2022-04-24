@@ -2,6 +2,7 @@
     "name": "arabic-handwritten-character-and-digit-recognition",
     "version": "1.0.0",
     "dependencies": {
-        "express": "latest"
+        "express": "latest",
+        "path": "^0.12.7"
     }
 }

@@ -61,7 +61,7 @@ let model;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('http://localhost:81/tfjs-models/model/model.json');
+  model = await tf.loadModel('http://localhost:3232/tfjs-models/model/model.json');
 }
 
 
@@ -129,6 +129,7 @@ function updateDisplay() {
   // console.log(predictions);
   const bestPred = predictions.indexOf(Math.max(...predictions));
   displayBox.innerText = bestPred;
+  label.innerText = IMAGE_CLASSES[bestPred];
 }
 
 document.getElementById('erase').addEventListener('click', erase);
@@ -154,6 +155,7 @@ function erase() {
   inputBox.fillStyle = 'black';
   inputBox.fillRect(0, 0, canvas.width, canvas.height);
   displayBox.innerText = '';
+  label.innerText = '';
 }
 
 function drawRotated(){

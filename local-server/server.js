@@ -16,6 +16,14 @@ app.get('/', function(req, res) {
 });
 
 app.get('/digit', function(req, res) {
+    res.sendFile(reqPath + '/static/digit_option.html');
+});
+
+app.get('/digit/learn', function(req, res) {
+    res.sendFile(reqPath + '/static/digit_learn.html');
+});
+
+app.get('/digit/test', function(req, res) {
     res.sendFile(reqPath + '/static/predict.html');
 });
 

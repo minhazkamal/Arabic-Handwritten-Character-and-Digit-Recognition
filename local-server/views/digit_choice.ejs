@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>H U R U F</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Digit Recognition</h1>
+  <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
+  
+  <section id="option-part">
+      <button onclick="learn(0)">0</button>
+      <button onclick="learn(1)">1</button>
+      <button onclick="learn(2)">2</button>
+      <button onclick="learn(3)">3</button>
+      <button onclick="learn(4)">4</button>
+      <button onclick="learn(5)">5</button>
+      <button onclick="learn(6)">6</button>
+      <button onclick="learn(7)">7</button>
+      <button onclick="learn(8)">8</button>
+      <button onclick="learn(9)">9</button>
+  </section>
+  <script>
+      function learn(digit) {
+          location.href = `/digit/learn?choice=${digit}`;
+      }
+  </script>
+</body>
+
+</html>

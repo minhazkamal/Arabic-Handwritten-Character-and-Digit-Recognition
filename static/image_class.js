@@ -1,14 +1,27 @@
-const IMAGE_CLASSES = {
+const ARB_NUMBER_CLASSES = {
     0: 'Sifr',
-    1: 'waaHid',
-    2: 'ithnaan',
-    3: 'thalaatha',
-    4: 'arbiya',
-    5: 'khamsa',
-    6: 'sitta',
-    7: 'sabya',
-    8: 'thamaaniya',
-    9: 'tisya'
+    1: 'WaaHid',
+    2: 'Ithnaan',
+    3: 'Thalaatha',
+    4: 'Arbiya',
+    5: 'Khamsa',
+    6: 'Sitta',
+    7: 'Sabya',
+    8: 'Thamaaniya',
+    9: 'Tisya'
+}
+
+const ENG_NUMBER_CLASSES = {
+    0: 'Zero',
+    1: 'One',
+    2: 'Two',
+    3: 'Three',
+    4: 'Four',
+    5: 'Five',
+    6: 'Six',
+    7: 'Seven',
+    8: 'Eight',
+    9: 'Nine'
 }
 
 // const IMAGE_CLASSES = {

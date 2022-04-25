@@ -2,7 +2,11 @@
     "name": "arabic-handwritten-character-and-digit-recognition",
     "version": "1.0.0",
     "dependencies": {
+        "ejs": "^3.1.7",
         "express": "latest",
         "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
     }
 }

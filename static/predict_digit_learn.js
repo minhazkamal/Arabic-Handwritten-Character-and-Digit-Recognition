@@ -143,7 +143,7 @@ function give_verdict() {
   const bestPred = Math.max(...predictions);
   const bestPredIndex = predictions.indexOf(Math.max(...predictions));
 
-  if(digit == bestPredIndex) {
+  if(digit == bestPredIndex && Math.floor(bestPred*10)>=5) {
     displayBox.innerText = `Congratulations! You got ${Math.floor(bestPred*10)} out of 10`;
   }
   else {

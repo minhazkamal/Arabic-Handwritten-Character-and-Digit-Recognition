@@ -5,6 +5,7 @@
   <title>H U R U F</title>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
   <link rel="stylesheet" href="/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -13,9 +14,11 @@
   <button id="back" onclick="goBack()">Back</button>
   <h1>Digit Recognition</h1>
   <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
+  <span onclick="loadAudio()"><i class='fas fa-volume-up' style='font-size:24px'></i></span>
+  <audio autoplay id="audio"><source src="/audio/digits/<%= digit %>.mp3" type="audio/mpeg"></audio>
   <div style="display: flex; justify-content: space-between;">
   <p id="writingDigit" style="font-size: 200%; font-weight: bold; display: inline;"><%= digit %></p>
-  <img src="/images/digits/1.jpg" height="64px" width="64px" style="display: inline; padding-top: 4%;">
+  <img src="/images/digits/<%= digit %>-1.png" height="64px" width="64px" style="display: inline; padding-top: 4%;">
   </div>
   <div style="display: flex; justify-content: space-between;">
   <p id="writingDigit_text_eng" style="font-size: 200%; font-weight: bold; display: inline;"><%= english %></p>
@@ -50,6 +53,7 @@
         else if($("#writingDigit").text() == 9) {
           $("#next").hide();
         }
+        
 
       });
 
@@ -60,6 +64,10 @@
       $("#prev").on('click', function() {
         location.href = `/digit/learn?choice=${parseInt($("#writingDigit").text())-1}`;
       });
+
+      function loadAudio() {
+        document.getElementById('audio').play();
+      }
 
       // document.getElementById('predict').addEventListener('click', give_verdict($("#writingDigit").text()));
 

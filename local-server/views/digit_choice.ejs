@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <h1>Digit Recognition</h1>
+  <button id="back" onclick="goBack()">Back</button>
+  <h1>HURUF</h1>
   <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
   
   <section id="option-part">
@@ -28,6 +29,9 @@
   <script>
       function learn(digit) {
           location.href = `/digit/learn?choice=${digit}`;
+      }
+      function goBack() {
+        location.href="/digit"
       }
   </script>
 </body>

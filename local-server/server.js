@@ -36,7 +36,7 @@ app.get('/digit/learn_choice', function(req, res) {
 });
 
 app.get('/digit/test', function(req, res) {
-    res.render('predict.ejs');
+    res.render('digit_test.ejs');
 });
 
 app.listen(3232, function() {

@@ -14,15 +14,14 @@
   <button id="back" onclick="goBack()">Back</button>
   <h1>HURUF</h1>
   <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
-  <span onclick="loadAudio()"><i class='fas fa-volume-up' style='font-size:24px'></i></span>
-  <audio autoplay id="audio"><source src="/audio/digits/<%= digit %>.mp3" type="audio/mpeg"></audio>
+  <span onclick="loadAudio()"><i class='fas fa-volume-up' style='font-size:24px'></i></span><br>
+  <audio autoplay id="audio"><source id="audio_source" src="" type="audio/mpeg"></audio>
+  <!-- <div style="display: flex; justify-content: space-between;"> -->
+  <p id="writingDigit" style="font-size: 200%; font-weight: bold; display: inline;"></p>
+  <!-- </div> -->
   <div style="display: flex; justify-content: space-between;">
-  <p id="writingDigit" style="font-size: 200%; font-weight: bold; display: inline;"><%= digit %></p>
-  <img src="/images/digits/<%= digit %>-1.png" height="64px" width="64px" style="display: inline; padding-top: 4%;">
-  </div>
-  <div style="display: flex; justify-content: space-between;">
-  <p id="writingDigit_text_eng" style="font-size: 200%; font-weight: bold; display: inline;"><%= english %></p>
-  <p id="writingDigit_text_arb" style="font-size: 200%; font-weight: bold; display: inline;"><%= arabic %></p>
+  <p id="writingDigit_text_eng" style="font-size: 200%; font-weight: bold; display: inline;"></p>
+  <p id="writingDigit_text_arb" style="font-size: 200%; font-weight: bold; display: inline;"></p>
   </div>
   <section id="canvas-part">
     <canvas id="main-canvas" width="300" height="300"></canvas>
@@ -32,41 +31,26 @@
     <div style="padding-left: 1%;"><h2 id="label"></h2></div>
   </section>
 
-    <button id="prev">Previous</button>
     <button id="erase">Clear</button>
     <button id="predict">Predict</button>
-    <button id="next">Next</button>
+    <button id="tryAnother">Try Another</button>
 
-  <script src="/predict_digit_learn.js"></script>
+  
   <script src="/image_class.js"></script>
+  <script src="/predict_digit_test.js"></script>
  
   <script>
-    
-      function goBack() {
-      location.href="/digit/learn"
-      }
-      $(document).ready(function() {
-        // console.log($("#writingDigit").text());
-        if($("#writingDigit").text() == 0) {
-          $("#prev").hide();
-        }
-        else if($("#writingDigit").text() == 9) {
-          $("#next").hide();
-        }
-        
 
-      });
-
-      $("#next").on('click', function() {
-        location.href = `/digit/learn?choice=${parseInt($("#writingDigit").text())+1}`;
-      });
-
-      $("#prev").on('click', function() {
-        location.href = `/digit/learn?choice=${parseInt($("#writingDigit").text())-1}`;
+      $("#tryAnother").on('click', function() {
+        location.href = `/digit/test`;
       });
 
       function loadAudio() {
         document.getElementById('audio').play();
+      }
+
+      function goBack() {
+        location.href="/digit"
       }
 
       // document.getElementById('predict').addEventListener('click', give_verdict($("#writingDigit").text()));

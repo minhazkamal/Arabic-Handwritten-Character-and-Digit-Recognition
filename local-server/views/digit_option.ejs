@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <button id="back" onclick="goBack()">Back</button>
   <h1>HURUF</h1>
   <p>Arabic Digit & Character recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
   
@@ -22,9 +23,15 @@
     <h2 id="label"></h2>
   </section> -->
   <a href="/digit/learn" class="btn btn-info" role="button">Learn</a>
-  <a href="/digit/Test" class="btn btn-info" role="button">Test</a>
+  <a href="/digit/test" class="btn btn-info" role="button">Test</a>
   <!-- <button id="erase">Clear</button>
   <button id="predict">Predict</button> -->
 </body>
+
+<script>
+  function goBack() {
+        location.href="/"
+  }
+</script>
 
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>H U R U F</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <button id="back" onclick="goBack()">Back</button>
+  <h1>HURUF</h1>
+  <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
+  
+  <div id="character-option-part" style="display: flex; flex-direction: row-reverse;"> 
+      <button onclick="learn(0)">ا</button>
+      <button onclick="learn(1)">ب</button>
+      <button onclick="learn(2)">ت</button>
+      <button onclick="learn(3)">ث</button>
+      <button onclick="learn(4)">ج</button>
+      <button onclick="learn(5)">ح</button>
+      <button onclick="learn(6)">خ</button>
+      <button onclick="learn(7)">د</button>
+      <button onclick="learn(8)">ذ</button>
+      <button onclick="learn(9)">ر</button>
+      <button onclick="learn(10)">ز</button>
+      <button onclick="learn(11)">س</button>
+      <button onclick="learn(12)">ش</button>
+      <button onclick="learn(13)">ص</button>
+      <button onclick="learn(14)">ض</button>
+      <button onclick="learn(15)">ط</button>
+      <button onclick="learn(16)">ظ</button>
+      <button onclick="learn(17)">ع</button>
+      <button onclick="learn(18)">غ</button>
+      <button onclick="learn(19)">ف</button>
+      <button onclick="learn(20)">ق</button>
+      <button onclick="learn(21)">ك</button>
+      <button onclick="learn(22)">ل</button>
+      <button onclick="learn(23)">م</button>
+      <button onclick="learn(24)">ن</button>
+      <button onclick="learn(25)">ه</button>
+      <button onclick="learn(26)">و</button>
+      <button onclick="learn(27)">ي</button>
+  </div>
+  <script>
+      function learn(digit) {
+          location.href = `/character/learn?choice=${digit}`;
+      }
+      function goBack() {
+        location.href="/character"
+      }
+  </script>
+</body>
+
+</html>

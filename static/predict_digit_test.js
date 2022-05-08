@@ -230,7 +230,10 @@ function drawRotated(){
     document.getElementById("writingDigit_text_eng").textContent = ENG_NUMBER_CLASSES[digit];
     document.getElementById("writingDigit_text_arb").textContent = ARB_NUMBER_CLASSES[digit];
     document.getElementById('audio_source').src=`/audio/digits/${digit}.mp3`;
+    document.getElementById('audio').load();
     document.getElementById('audio').play();
+    //console.log(digit);
+    // document.getElementById('audio').play();
   }
 
 

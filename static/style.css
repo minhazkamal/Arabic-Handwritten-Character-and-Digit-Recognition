@@ -20,6 +20,14 @@ section {
 	margin: 20px 0;
 }
 
+#character-option-part {
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 20px 0;
+}
+
 #prediction {
 	width: 300px;
 	height: 300px;

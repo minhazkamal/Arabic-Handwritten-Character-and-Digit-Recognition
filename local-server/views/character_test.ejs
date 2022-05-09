@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>H U R U F</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
+  <link rel="stylesheet" href="/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <button id="back" onclick="goBack()">Back</button>
+  <h1>HURUF</h1>
+  <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
+  <span onclick="loadAudio()"><i class='fas fa-volume-up' style='font-size:24px'></i></span><br>
+  <audio autoplay id="audio"><source id="audio_source" src="" type="audio/ogg"></audio>
+  <!-- <div style="display: flex; justify-content: space-between;"> -->
+  <p id="writingDigit" style="font-size: 200%; font-weight: bold; display: none;"></p>
+  <!-- </div> -->
+  <div style="display: flex; justify-content: space-between;">
+  <!-- <p id="writingDigit_text_eng" style="font-size: 200%; font-weight: bold; display: inline;"></p> -->
+  <p id="writingDigit_text_arb" style="font-size: 200%; font-weight: bold; display: inline;"></p>
+  </div>
+  <section id="canvas-part">
+    <canvas id="main-canvas" width="300" height="300"></canvas>
+    <canvas id="small-main-canvas" width="64" height="64"></canvas>
+    <canvas id="small-canvas" width="64" height="64"></canvas>
+    <div id="prediction" style="font-size: medium; line-height: 1.6; padding-top: 120px;"></div>
+    <div style="padding-left: 1%;"><h2 id="label"></h2></div>
+  </section>
+
+    <button id="erase">Clear</button>
+    <button id="predict">Predict</button>
+    <button id="tryAnother">Try Another</button>
+
+  
+  <script src="/image_class.js"></script>
+  <script src="/predict_character_test.js"></script>
+ 
+  <script>
+
+      $("#tryAnother").on('click', function() {
+        // location.href = '/digit/test-test';
+        erase();
+        random_digit();
+        // console.log(document.getElementById('audio_source'));
+      });
+
+      function loadAudio() {
+        document.getElementById('audio').play();
+        // console.log(document.getElementById('audio_source'));
+      }
+
+      function goBack() {
+        location.href="/character"
+      }
+
+      // document.getElementById('predict').addEventListener('click', give_verdict($("#writingDigit").text()));
+
+
+  </script>
+</body>
+
+</html>

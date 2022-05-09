@@ -52,6 +52,9 @@ app.get('/digit/test', function(req, res) {
     res.render('digit_test.ejs');
 });
 
+app.get('/character/test', function(req, res) {
+    res.render('character_test.ejs');
+});
 
 app.listen(3232, function() {
     console.log("Server static on 3232");

@@ -142,8 +142,9 @@ function give_verdict() {
   // console.log(predictions);
   const bestPred = Math.max(...predictions);
   const bestPredIndex = predictions.indexOf(Math.max(...predictions));
+  // console.log(bestPredIndex);
 
-  if(digit == bestPredIndex && Math.floor(bestPred*10)>=5) {
+  if(digit == bestPredIndex && Math.floor(bestPred*10)>=3) {
     displayBox.innerText = `Congratulations! You got ${Math.floor(bestPred*10)} out of 10`;
   }
   else {

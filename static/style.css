@@ -1,12 +1,17 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	width: 700px;
+	/* width: 700px; */
 	text-align: center;
 	margin: 0px auto;
 	color: #111111;
 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url('images/misc/78825.jpg');
 	background-size: contain;
+	margin: 0;
 }
 
 h1 {

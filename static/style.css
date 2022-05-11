@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 /* html,body{
+=======
+@import url('http://fonts.cdnfonts.com/css/afarat-ibn-blady');
+html,body{
+>>>>>>> Stashed changes
 	width: 100%;
 	height: 100%;
 } */
@@ -72,4 +77,8 @@ button {
 button:hover {
 	background-color: #111;
 	color: white;
+}
+
+.arabic-title{
+    font-family: 'Afarat ibn Blady', sans-serif;
 }

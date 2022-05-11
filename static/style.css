@@ -110,10 +110,12 @@ button:hover {
 	align-items: center;
 	justify-content: center;
 	color: white;
+	/* margin-top: 2em; */
+	border-radius: 0.5em;
 }
 
 .btn-home:hover{
-	background-color: #fac34287;
+	background-color: #f6c960bf;
 	color: rgb(52, 51, 51);
 	transition: background-color 0.1s ease;
 	text-decoration: none;
@@ -124,6 +126,24 @@ button:hover {
 	justify-content: space-around;
 }
 
-p{
-	margin-bottom: 5em;
+footer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(21, 20, 20);
+}
+
+.p-footer{
+	color: white;
+	margin-bottom: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.p-home{
+	margin-top: 2.5em;
+	margin-bottom: 3.5em;
+	font-size: larger;
+	color: rgb(53, 52, 52);
 }

@@ -33,23 +33,3 @@ i:hover{
     justify-content: space-evenly;
 }
 
-#prediction {
-	width: 300px;
-	height: 300px;
-	box-sizing: border-box;
-	border: 1px solid #111;
-	border-radius: 5px;
-	font-size: 228px;
-	line-height: 300px;
-}
-
-#main-canvas {
-    width: 300px;
-    height: 300px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-#small-canvas, #small-main-canvas {
-	display: none;
-}

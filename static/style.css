@@ -1,17 +1,22 @@
 @import url('http://fonts.cdnfonts.com/css/afarat-ibn-blady');
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
-html, body {
-	width: 100%;
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
 	height: 100%;
 }
 
 body {
+	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	/* font-size: 18px; */
 	/* width: 700px; */
 	text-align: center;
-	margin: 0px auto;
+	/* margin: 0px auto; */
 	color: #111111;
 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('images/misc/78825.jpg');
 	background-size: contain;

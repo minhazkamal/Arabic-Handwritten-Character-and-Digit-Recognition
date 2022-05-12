@@ -1,0 +1,52 @@
+.option-digit{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.btn-digit{
+    height: 100px;
+    width: 120px;
+    font-size: 3em;
+    /* margin-bottom: 0.2em; */
+    background-color: rgb(52, 51, 51);
+    color: white;
+    border-radius: 0.5em;
+}
+
+.btn-digit:hover{
+    background-color: #fdd579;
+	color: rgb(52, 51, 51);
+	transition: background-color 0.1s ease;
+	text-decoration: none;
+    width: 125px;
+}
+
+.card{
+    background-color: #f6c960bf;
+    height: 220px;
+    width: 130px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.card:hover{
+    background-color: rgb(52, 51, 51);
+    color: white;
+    transition: background-color 0.1s ease-in-out;
+	text-decoration: none;   
+}
+
+.card-digit{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    font-size: 4.5em;
+}

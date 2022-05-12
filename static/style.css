@@ -8,7 +8,7 @@ html, body {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+	/* font-size: 18px; */
 	/* width: 700px; */
 	text-align: center;
 	margin: 0px auto;
@@ -16,11 +16,6 @@ body {
 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('images/misc/78825.jpg');
 	background-size: contain;
 	/* margin: 0; */
-}
-
-h1 {
-	font-size: 48px;
-	margin: 20px;
 }
 
 section {
@@ -76,6 +71,11 @@ button {
 button:hover {
 	background-color: #111;
 	color: white;
+}
+
+.arabic-title, .title{
+	font-size: 48px;
+	margin: 20px;
 }
 
 .arabic-title {
@@ -137,16 +137,19 @@ footer {
 }
 
 .p-footer {
+	font-family: 'Montserrat', sans-serif;
 	color: white;
 	margin-bottom: 0;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	font-size: larger;
 }
 
 .p-home {
+	font-family: 'Montserrat', sans-serif;
 	margin-top: 2.5em;
 	margin-bottom: 3.5em;
-	font-size: larger;
+	font-size: 1.5em;
 	color: rgb(53, 52, 52);
 }
 

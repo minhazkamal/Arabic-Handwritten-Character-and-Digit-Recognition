@@ -5,39 +5,50 @@
   <title>H U R U F</title>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/character_learn.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
 </head>
 
 <body>
-  <button id="back" onclick="goBack()">Back</button>
-  <h1 class="arabic-title">حروف</h1>
-  <h1 class="title">HURUF</h1>
-  <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
-  <span onclick="loadAudio()"><i class='fas fa-volume-up' style='font-size:24px'></i></span>
+
+  <nav class="navbar navbar-light bg-light">
+    <!-- <a class="navbar-brand" href="#">Default</a> -->
+    <h1 class="arabic-title">حروف</h1>
+    <h1 class="title">HURUF</h1>
+  </nav>
+  <!-- <div class="bio">
+    <p class="p-home">
+      Huruf is an Arabic Character and Digit recognition app <br> that has been specially developed
+      for enthusiasts who want to learn arabic language.
+    </p>
+  </div> -->
+  <span onclick="loadAudio()"><i class='fas fa-volume-up'></i></span>
   <audio autoplay id="audio"><source src="/audio/character/<%= digit %>.mp3" type="audio/mpeg"></audio>
-  <div style="display: flex; justify-content: space-between;">
+  <div class="img-char">
   <p id="writingDigit" style="font-size: 200%; font-weight: bold; display: none;"><%= digit %></p>
-  <img src="/images/characters/<%= digit %>.png" height="64px" width="64px" style="display: inline; padding-top: 4%;">
+  <img src="/images/characters/<%= digit %>.png" >
   </div>
-  <div style="display: flex; justify-content: space-between;">
-  <p id="writingDigit_text_eng" style="font-size: 200%; font-weight: bold; display: inline;"><%= arb_char %></p>
+  <div class="char-text">
+  <!-- <p id="writingDigit_text_eng" style="font-size: 200%; font-weight: bold; display: inline;"><%= arb_char %></p> -->
   <p id="writingDigit_text_arb" style="font-size: 200%; font-weight: bold; display: inline;"><%= arb_prnc %></p>
   </div>
   <section id="canvas-part">
-    <canvas id="main-canvas" width="300" height="300"></canvas>
+    <canvas id="main-canvas"></canvas>
     <canvas id="small-main-canvas" width="64" height="64"></canvas>
     <canvas id="small-canvas" width="64" height="64"></canvas>
     <div id="prediction" style="font-size: medium; line-height: 1.6; padding-top: 120px;"></div>
-    <div style="padding-left: 1%;"><h2 id="label"></h2></div>
+    <!-- <div style="padding-left: 1%;"><h2 id="label"></h2></div> -->
   </section>
 
     <button id="prev">Previous</button>
     <button id="erase">Clear</button>
     <button id="predict">Predict</button>
     <button id="next">Next</button>
-
+    <button id="back" onclick="goBack()">Back</button>
     <script src="/image_class.js"></script>
     <script src="/predict_character_learn.js"></script>
   

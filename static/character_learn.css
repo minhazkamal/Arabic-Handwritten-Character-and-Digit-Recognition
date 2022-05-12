@@ -1,0 +1,55 @@
+.img-char {
+    display: flex;
+    justify-content: center;
+}
+
+.img-char img {
+    height: 100px;
+    width: 100px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i:hover{
+    font-size: 35px;
+    cursor: pointer;
+    transition: font-size 0.1s ease-out;
+}
+.char-text{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#prediction {
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	border: 1px solid #111;
+	border-radius: 5px;
+	font-size: 228px;
+	line-height: 300px;
+}
+
+#main-canvas {
+    width: 300px;
+    height: 300px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#small-canvas, #small-main-canvas {
+	display: none;
+}

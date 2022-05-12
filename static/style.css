@@ -1,10 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/afarat-ibn-blady');
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
-html,body{
+html, body {
 	width: 100%;
 	height: 100%;
-} 
+}
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -13,7 +13,7 @@ body {
 	text-align: center;
 	margin: 0px auto;
 	color: #111111;
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url('images/misc/78825.jpg');
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('images/misc/78825.jpg');
 	background-size: contain;
 	/* margin: 0; */
 }
@@ -56,7 +56,7 @@ section {
 
 #small-canvas, #small-main-canvas {
 	display: none;
-} 
+}
 
 button {
 	font: inherit;
@@ -69,8 +69,8 @@ button {
 	outline: none;
 	cursor: pointer;
 	transition: all 0.3s;
-  --webkit-transition: all 0.3s;
-  --moz-transition: all 0.3s;
+	--webkit-transition: all 0.3s;
+	--moz-transition: all 0.3s;
 }
 
 button:hover {
@@ -78,8 +78,8 @@ button:hover {
 	color: white;
 }
 
-.arabic-title{
-    font-family: 'Afarat ibn Blady', sans-serif;
+.arabic-title {
+	font-family: 'Afarat ibn Blady', sans-serif;
 	margin-bottom: 0;
 	/* display: flex;
 	align-items: flex-start;
@@ -87,7 +87,7 @@ button:hover {
 	margin-top: 1rem;
 }
 
-.title{
+.title {
 	font-family: 'Sofia', cursive;
 	margin-top: 0;
 	/* display: flex;
@@ -96,11 +96,11 @@ button:hover {
 	margin-bottom: 1rem;
 }
 
-.navbar{
+.navbar {
 	background-color: #fae4afae;
 }
 
-.btn-home{
+.btn-home {
 	background-color: rgb(52, 51, 51);
 	height: 300px;
 	width: 500px;
@@ -112,21 +112,23 @@ button:hover {
 	color: white;
 	/* margin-top: 2em; */
 	border-radius: 0.5em;
+	margin-bottom: 2em;
 }
 
-.btn-home:hover{
+.btn-home:hover {
 	background-color: #f6c960bf;
 	color: rgb(52, 51, 51);
 	transition: background-color 0.1s ease;
 	text-decoration: none;
 }
 
-.home-buttons{
+.home-buttons {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-footer{
+footer {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -134,16 +136,17 @@ footer{
 	background-color: rgb(21, 20, 20);
 }
 
-.p-footer{
+.p-footer {
 	color: white;
 	margin-bottom: 0;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-.p-home{
+.p-home {
 	margin-top: 2.5em;
 	margin-bottom: 3.5em;
 	font-size: larger;
 	color: rgb(53, 52, 52);
 }
+

@@ -1,0 +1,93 @@
+.img-char {
+    display: flex;
+    justify-content: center;
+}
+
+.img-char img {
+    height: 100px;
+    width: 100px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+i:hover{
+    font-size: 35px;
+    cursor: pointer;
+    transition: font-size 0.1s ease-out;
+}
+
+.char-text{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.btn-digit-learn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+
+button {
+	background-color: rgb(52, 51, 51);
+	height: 50px;
+	width: 150px;
+	font-size: 5rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	/* margin-top: 2em; */
+	border-radius: 0.5em;
+	margin-bottom: 2em;
+}
+
+button:hover {
+	background-color: #f6c960bf;
+	color: rgb(52, 51, 51);
+	transition: background-color 0.1s ease;
+	text-decoration: none;
+    border: none;
+    font-weight: 500;
+}
+
+.footer-char{
+    position: relative;
+    left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(21, 20, 20);
+    height: 55px;
+}
+
+.p-footer-char{
+    font-family: 'Montserrat', sans-serif;
+	color: white;
+	margin-top: 1em;
+	font-size: larger;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}

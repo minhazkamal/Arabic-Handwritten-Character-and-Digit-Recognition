@@ -36,13 +36,16 @@ section {
 } */
 
 #prediction {
+	font-family: 'Montserrat', sans-serif;
 	width: 300px;
 	height: 300px;
 	box-sizing: border-box;
-	border: 1px solid #111;
+	border: 0.1px solid #111;
 	border-radius: 5px;
-	font-size: 228px;
-	line-height: 300px;
+	font-size: 500px;
+	line-height: 500px;
+	background-color: #fae3af8a;;
+	font-weight: bold;
 }
 
 #main-canvas {

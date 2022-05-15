@@ -104,9 +104,44 @@
     }
 
       // document.getElementById('predict').addEventListener('click', give_verdict($("#writingDigit").text()));
-
-
   </script>
+  <!-- for dropdown -->
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction(value) {
+      if(value == 'character') {
+        document.getElementById("myDropdown-character").classList.toggle("show");
+      }
+      else if(value == 'digit') {
+        document.getElementById("myDropdown-digit").classList.toggle("show");
+      } 
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn-character')) {
+        var dropdowns = document.getElementsByClassName("dropdown-character");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+      if (!event.target.matches('.dropbtn-digit')) {
+        var dropdowns = document.getElementsByClassName("dropdown-digit");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </body>
 
 </html>

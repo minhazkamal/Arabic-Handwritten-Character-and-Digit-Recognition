@@ -19,6 +19,7 @@ body {
     flex-direction: row-reverse;
     margin-bottom: 1em;
 }
+
 .btn-char{
     height: 100px;
     width: 120px;

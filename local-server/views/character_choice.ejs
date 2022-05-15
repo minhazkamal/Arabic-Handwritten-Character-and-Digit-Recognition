@@ -41,13 +41,12 @@
             Test</a>
         </div>
       </div>
+      <button id="back" style="margin-left: 2rem;" class="dropbtn dropbtn-digit btn-digit-learn" onclick="goBack()"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</button>
     </div>
   </nav>
   <div class="bio">
     <p class="p-home">
-      Huruf is an Arabic Character and Digit recognition app <br> that has been specially developed
-      for enthusiasts who want to learn arabic language.
-    </p>
+      Choose one from the 28 characters and start practicing today.</p>
   </div>
   <button id="back" onclick="goBack()">Back</button>
   <div class="characters">
@@ -100,6 +99,43 @@
         location.href="/character"
       }
   </script>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction(value) {
+      if(value == 'character') {
+        document.getElementById("myDropdown-character").classList.toggle("show");
+      }
+      else if(value == 'digit') {
+        document.getElementById("myDropdown-digit").classList.toggle("show");
+      } 
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn-character')) {
+        var dropdowns = document.getElementsByClassName("dropdown-character");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+      if (!event.target.matches('.dropbtn-digit')) {
+        var dropdowns = document.getElementsByClassName("dropdown-digit");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+  
 </body>
 
 </html>

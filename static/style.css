@@ -1,6 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/afarat-ibn-blady');
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&family=Poiret+One&display=swap');
 html {
 	min-height: 100%;
 }
@@ -107,6 +108,7 @@ button:hover {
 	display: flex;
 	background-color: #fae4afae;
 	justify-content: space-between;
+	height: 150px;
 }
 
 .btn-home {
@@ -154,11 +156,12 @@ footer {
 }
 
 .p-home {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poiret One', cursive;
 	margin-top: 2.5em;
 	margin-bottom: 3.5em;
-	font-size: 1.5em;
-	color: rgb(53, 52, 52);
+	font-weight: 600;
+	font-size: 3rem;
+	color: rgb(28, 27, 27);
 }
 
 
@@ -168,11 +171,19 @@ footer {
 
 .dropbtn {
 	scale: 1.3;
+	font-weight: bold;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid black 3px;
+	border-radius: 0px;
+	transition: all .3s;
 }
 
-/* .dropbtn:hover, .dropbtn:focus {
-	background-color: #2980B9;
-  } */
+.dropbtn:hover, .dropbtn:focus {
+	scale: 1.4;
+	box-shadow: 0 5px 15px rgba(255, 220, 81, 0.778);
+  }
 
 
 .dropdown {
@@ -222,6 +233,7 @@ footer {
 	display: inline-block;
 	width: 50%;
 	text-align: left;
+	scale: .8;
 }
 
 .grp-dropdown{

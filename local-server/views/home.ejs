@@ -22,22 +22,22 @@
     <!-- dropdown -->
     <div class="grp-dropdown">
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn btn-digit-learn"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+        <button onclick="myFunction('character')" class="dropbtn-character btn-digit-learn"><i class="fa fa-arrow-down" aria-hidden="true"></i>
            Character</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#home"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        <div id="myDropdown-character" class="dropdown-content dropdown-character">
+          <a href="/character/learn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
             Learn</a>
-          <a href="#about"><i class="fa fa-pencil" aria-hidden="true"></i>
+          <a href="/character/test"><i class="fa fa-pencil" aria-hidden="true"></i>
             Test</a>
         </div>
       </div>
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn btn-digit-learn">Digit <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        <button onclick="myFunction('digit')" class="dropbtn-digit btn-digit-learn">Digit <i class="fa fa-arrow-down" aria-hidden="true"></i>
         </button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#home"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        <div id="myDropdown-digit" class="dropdown-content dropdown-digit">
+          <a href="/digit/learn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
             Learn</a>
-          <a href="#about"><i class="fa fa-pencil" aria-hidden="true"></i>
+          <a href="/digit/test"><i class="fa fa-pencil" aria-hidden="true"></i>
             Test</a>
         </div>
       </div>
@@ -73,14 +73,29 @@
   <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
+    function myFunction(value) {
+      if(value == 'character') {
+        document.getElementById("myDropdown-character").classList.toggle("show");
+      }
+      else if(value == 'digit') {
+        document.getElementById("myDropdown-digit").classList.toggle("show");
+      } 
     }
     
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
+      if (!event.target.matches('.dropbtn-character')) {
+        var dropdowns = document.getElementsByClassName("dropdown-character");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+      if (!event.target.matches('.dropbtn-digit')) {
+        var dropdowns = document.getElementsByClassName("dropdown-digit");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
           var openDropdown = dropdowns[i];

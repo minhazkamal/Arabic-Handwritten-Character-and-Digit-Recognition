@@ -1,6 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/afarat-ibn-blady');
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
 
 html {
 	min-height: 100%;
@@ -90,11 +90,15 @@ button:hover {
 }
 
 .arabic-title {
-	font-family: 'Afarat ibn Blady', sans-serif;
+	font-family: 'Scheherazade New', 'sans-serif';
 	margin-bottom: 0;
 	margin-top: 1rem;
 	/* display: block; */
 }
+
+/* .btn-char {
+	
+} */
 
 .title {
 	font-family: 'Sofia', cursive;

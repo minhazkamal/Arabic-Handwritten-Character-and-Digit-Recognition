@@ -81,19 +81,12 @@ button:hover {
 	color: white;
 }
 
-.huruf-logo {
-	font-size: 48px;
-	margin: 20px;
-	color: black;
-	align-items: right;
-	display: inline-block;
-	justify-content: left;
-}
 
-/* .arabic-title, .title{
+
+.arabic-title, .title{
 	font-size: 48px;
 	margin: 20px;
-} */
+}
 
 .arabic-title {
 	font-family: 'Afarat ibn Blady', sans-serif;

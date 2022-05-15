@@ -189,6 +189,7 @@ footer {
 	position: absolute;
 	background-color: #f1f1f1;
 	min-width: 190px;
+	font-size: 1.8rem;
 	/* min-height: 200px; */
 	overflow: auto;
 	transition: all 0.3s;

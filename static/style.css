@@ -81,26 +81,30 @@ button:hover {
 	color: white;
 }
 
-.arabic-title, .title{
+.huruf-logo {
 	font-size: 48px;
 	margin: 20px;
+	color: black;
+	align-items: right;
+	display: inline-block;
+	justify-content: left;
 }
+
+/* .arabic-title, .title{
+	font-size: 48px;
+	margin: 20px;
+} */
 
 .arabic-title {
 	font-family: 'Afarat ibn Blady', sans-serif;
 	margin-bottom: 0;
-	/* display: flex;
-	align-items: flex-start;
-	margin-left: 5.5rem; */
 	margin-top: 1rem;
+	/* display: block; */
 }
 
 .title {
 	font-family: 'Sofia', cursive;
 	margin-top: 0;
-	/* display: flex;
-	align-items: flex-start;
-	margin-left: 4rem; */
 	margin-bottom: 1rem;
 }
 

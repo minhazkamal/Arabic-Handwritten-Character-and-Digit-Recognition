@@ -32,6 +32,10 @@ localhost:3232
 ```
 * Now you will be able to see the features.
 
+## Demonstration
+
+![demostration](./demo.gif)
+
 ## Contributors
 [Minhaz Kamal](https://minhazkamal.github.io/)
 

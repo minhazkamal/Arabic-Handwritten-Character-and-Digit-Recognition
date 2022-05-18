@@ -1,4 +1,4 @@
-# G L E A M
+# H U R U F
 ## A Blood Donation App
 ![Status](https://img.shields.io/badge/Status-Finished-green)
 ![IDE](https://img.shields.io/badge/IDE-VSCode-blue)

@@ -4,7 +4,7 @@
 ![IDE](https://img.shields.io/badge/IDE-VSCode-blue)
 ![License](https://img.shields.io/badge/license-MIT-purple.svg)
 ![UI](https://img.shields.io/badge/UI-EJS-brightgreen)
-![ML Framework] https://img.shields.io/badge/ML%20Framework-Tensorflow-orange
+![ML_Framework] https://img.shields.io/badge/ML%20Framework-Tensorflow-orange
 
 In simple words, GLEAM is a blood donation application intended for users who want to find blood in times of need and also help others by donating. Reducing the time to find a precious bag of blood is the main goal. Along with this, the product aims for user convenience and usability. That is why it is implemented as a progressive web application. It facilitates autofill features to reduce time and keeps in touch with the users. The app basically focuses on the people of Bangladesh only.
 

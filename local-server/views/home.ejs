@@ -15,16 +15,14 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light" style="display: block; scale: 1.25">
     <!-- Titles -->
-    <div class="grp-title">
-      <h1 class="arabic-title">حروف</h1>
-      <h1 class="title">HURUF</h1>
-    </div>
+      <h1 class="arabic-title" style="display: block;">حروف</h1>
+      <h1 class="title" style="display: block;">HURUF</h1>
     <!-- dropdowns -->
-    <div class="grp-dropdown">
+    <!-- <div class="grp-dropdown">
       <div class="dropdown">
-        <button onclick="myFunction('character')" class="dropbtn dropbtn-character btn-digit-learn">Alphabets <i class="fas fa-angle-down"></i></button>
+        <button onclick="myFunction('character')" class="dropbtn dropbtn-character btn-digit-learn">Character <i class="fas fa-angle-down"></i></button>
         <div id="myDropdown-character" class="dropdown-content dropdown-character">
           <a href="/character/learn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
             Learn</a>
@@ -42,7 +40,8 @@
             Test</a>
         </div>
       </div>
-    </div>
+      <button id="back" style="margin-left: 2rem;" class="dropbtn dropbtn-digit btn-digit-learn" onclick="goBack()"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</button>
+    </div> -->
   </nav>
   <div class="bio">
     <p class="p-home">

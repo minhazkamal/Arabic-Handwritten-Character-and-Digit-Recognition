@@ -34,7 +34,7 @@ localhost:3232
 
 ## Demonstration
 Only for the digit part there was live demonstration. Here you can write the data and it will predict the digits.
-[Digit Recognition Live Demo](https://minhazkamal.github.io/Arabic-Digit-Recognition/){:target="\_blank"}
+[Digit Recognition Live Demo](https://minhazkamal.github.io/Arabic-Digit-Recognition/)
 
 ![demostration](./demo.gif)
 
